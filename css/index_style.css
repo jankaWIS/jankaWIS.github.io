@@ -1,0 +1,409 @@
+/* */
+/* MY CODE */
+/* */
+
+
+
+
+/* Header */
+
+/* for phones */
+
+.img-mobile {
+  display: block;
+  background-image: url("../img/photos/IMG_20210928_071737_b.png");
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* create a nice box frame around my name */
+.left-box-name {
+  margin: 0 0 auto 20%;
+  padding-bottom: 10px;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+/* style the text */
+.ab-lef-box-header {
+  /* default? for Chrome */
+  font-family: Times-Roman, serif;
+  text-align: center;
+  /* make some glow */
+  text-shadow: 2px 2px 4px #fff;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+h2.ab-lef-box-header {
+  font-style: italic;
+  font-size: 20px;
+  padding: 0;
+}
+
+
+
+
+/*!**!*/
+/*!* quotes *!*/
+/*!* https://codepen.io/jupago/pen/dwZKbM *!*/
+/*!* https://freefrontend.com/css-quote-styles/ *!*/
+
+/*!* center the blockquote in the page *!*/
+/*main article .blockquote-wrapper {*/
+/*   padding: 0 20px;*/
+/*}*/
+
+/*!* Blockquote main style *!*/
+/*main article .blockquote {*/
+/*    position: relative;*/
+/*    !*font-family: 'Montserrat', sans-serif;*!*/
+/*    font-family: 'Cinzel', serif;*/
+/*    !*font-family: 'Bitter', serif;*!*/
+/*    font-weight: 400;*/
+/*    color: ##111;*/
+/*    padding: 20px 0;*/
+/*    width: 100%;*/
+/*    max-width: 500px;*/
+/*    z-index: 1;*/
+/*    margin: 20px auto 60px;*/
+/*    align-self: center;*/
+/*    border-top: solid 1px;*/
+/*    border-bottom: solid 1px;*/
+/*}*/
+
+/*!* Blockquote header *!*/
+/*main article .blockquote h2 {*/
+/*    position: relative;*/
+/*    color: #111;*/
+/*    font-size: 22px;*/
+/*    font-weight: 600;*/
+/*    line-height: 1;*/
+/*    margin: 0;*/
+/*}*/
+
+/*!* Blockquote right double quotes *!*/
+/*main article .blockquote:after {*/
+/*    position: absolute;*/
+/*    content: "”";*/
+/*    color: rgba(17, 17, 17, 1);*/
+/*    font-size: 8rem;*/
+/*    line-height: 0;*/
+/*    bottom: -43px;*/
+/*    right: 30px;*/
+/*}*/
+
+/*!* Blockquote subheader *!*/
+/*main article .blockquote h4 {*/
+/*    !*font-family: 'Cinzel', serif;*!*/
+/*    font-family: 'Bitter', serif;*/
+/*    position: relative;*/
+/*    color: #292a2b;*/
+/*    font-size: 1.1rem;*/
+/*    font-weight: normal;*/
+/*    line-height: 1;*/
+/*    margin: 0;*/
+/*    padding-top: 15px;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*!* need to overwrite the rules *!*/
+/*main article .blockquote h2 {*/
+/*  !* default? for Chrome *!*/
+/*  font-family: Times-Roman, serif;*/
+/*  position: relative;*/
+/*    color: #111;*/
+/*    font-size: 22px;*/
+/*    font-weight: 600;*/
+/*    line-height: 1;*/
+/*    margin: 0;*/
+/*    border-bottom: none;*/
+/*}*/
+
+
+
+/* remove the big rolling secion */
+.ab-scrolling-fullwidth-header {
+  display: none;
+}
+
+
+/* change a bit main styling */
+main {
+  /* to have a space between the header and this box */
+  padding: 60px 20px 0 20px;
+  margin: 100px auto 50px;
+  /*font-family: 'Bitter', serif;*/
+  /*font-family: 'Catamaran', serif;*/
+  /*font-family: 'Montserrat', sans-serif;*/
+  /*font-family: Open Sans, Arial, sans-serif;*/
+  font-size: 18px;
+}
+
+main article h2 {
+  font-family: 'Bitter', serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #111;
+  /*text-transform: uppercase;*/
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+
+main ul li {
+  display: list-item;
+  margin-left: 30px;
+  list-style: circle;
+  padding: 5px;
+}
+
+
+.front-page-text {
+  padding-bottom: 20px;
+}
+
+
+
+
+/* change the layout for tablet -- run the code in {} only if the the statement in () is true */
+@media only screen and (min-width: 768px) {
+
+  /*!* increase the header size *!*/
+  /*.blockquote h2 {*/
+  /*  font-size: 40px;*/
+  /*  padding: 30px 0;*/
+  /* }*/
+
+  /*.blockquote h4 {*/
+  /*  font-size: 1.4rem;*/
+  /*}*/
+
+
+  /* remove the mobile picture */
+  .img-mobile {
+    display: none;
+  }
+
+  /* change also the wrapper */
+  .wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  main {
+    box-shadow: 1px 1px 50px #b8b8b8;
+  }
+
+
+
+
+
+/*  Chicago webpage */
+  .ab-bg-wrap {
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+
+  /* bring it back */
+  .ab-scrolling-fullwidth-header {
+    display: block;
+  }
+
+  /* this makes the cool effect of disappearing when scrolling down */
+  .ab-scrolling-fullwidth-header .ab-parallax-css {
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      /* this specifically is making the roll over it */
+      background-attachment: fixed;
+      position: absolute;
+      width: 100%;
+      height: 95%;
+      overflow: hidden;
+  }
+
+/*  this brings the welcome sign to the front */
+.ab-scrolling-fullwidth-header .ab_fullwidth_header_container {
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    /* how far to reach */
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  /* create a nice box frame around my name */
+  .left-box-name {
+    margin: 20px -20px auto 20%;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    background-color: rgba(230, 230, 230, 0.5);
+  }
+
+  /* style the text */
+  .ab-lef-box-header {
+    /*font-family: 'Bitter', serif;*/
+    /* default? for Chrome */
+    font-family: Times-Roman, serif;
+    text-align: right;
+    /* make some glow */
+    text-shadow: 2px 2px 4px #fff;
+    padding: 40px 0;
+    font-size: 100px;
+    z-index: 3;
+  }
+
+  h2.ab-lef-box-header {
+    font-style: italic;
+    font-size: 60px;
+    padding: 0;
+  }
+
+  /* the scrolling icon */
+  .ab-scrolling-fullwidth-header .et_pb_fullwidth_header_scroll {
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none
+  }
+
+  .ab-scrolling-fullwidth-header a {
+      display: inline-block;
+      pointer-events: all
+  }
+
+  .ab-scrolling-fullwidth-header a {
+      color: #fff;
+      font-size: 3.5em
+  }
+
+  .ab-scrolling-fullwidth-header .scroll-down-container .scroll-down-phone,.ab-scrolling-fullwidth-header .scroll-down-container .scroll-down-tablet {
+      display: none
+  }
+
+
+}
+
+
+
+ /* footer */
+/* todo decide whether to move to style.css */
+footer .footer-cc-mobile {
+    font-family: Arial;
+    position: absolute;
+    margin: auto 0 0px;
+    text-align: center;
+    /* centre the label */
+    line-height: 40px;
+    float: left;
+  }
+
+footer .footer-cc {
+  display: none;
+}
+
+
+/* very small phones */
+@media only screen and (max-width: 400px) {
+  ul.social-media-list {
+      margin: 5px 0px 5px 40px;
+  }
+
+}
+
+/* very big screens */
+@media only screen and (min-height: 1200px) {
+
+  header {
+    /*todo - fix this at some point*/
+    /*position: absolute;*/
+    /*margin-top: calc(100% - 1600px); !* 300px;*!*/
+    margin-top: 300px;
+  }
+
+  .ab-scrolling-fullwidth-header {
+    max-height: 1000px;
+  }
+  .ab-scrolling-fullwidth-header .ab-parallax-css {
+    max-height: 1300px;
+    background-position-x: right;
+    background-position-y: center;
+  }
+
+}
+
+/* change the layout for PC -- run the code in {} only if the the statement in () is true */
+@media only screen and (min-width: 1000px) {
+
+  /* spread the quote */
+  .blockquote-wrapper {
+    width: 1000px;
+    margin: -100px auto 60px;
+  }
+
+  .blockquote {
+    margin: 10px auto;
+    max-width: none;
+  }
+
+  /* but not in the main text */
+  main .blockquote-wrapper {
+    /* change the width to fit the box */
+    width: 100%;
+    margin: 40px 0 80px;
+    padding: 0;
+  }
+
+  main .blockquote {
+    padding: 20px 0;
+  }
+
+  /* remove the styling from main h2 */
+  main .blockquote h2 {
+    border-bottom: none;
+  }
+
+  main .blockquote:after {
+    bottom: -40px;
+  }
+
+  .last-paragraph {
+    padding-bottom: 30px;
+  }
+
+
+  /* footer */
+  /*todo*/
+  .footer-cc-mobile {
+    display: none;
+  }
+
+  footer .footer-cc {
+    display: block;
+    font-family: Arial;
+    position: absolute;
+    margin: auto 0 0px;
+    text-align: center;
+    /* centre the label */
+    line-height: 40px;
+    float: left;
+  }
+
+}

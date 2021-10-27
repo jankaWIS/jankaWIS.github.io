@@ -1,0 +1,137 @@
+/* */
+/* MY CODE */
+/* */
+
+
+
+/* main */
+
+
+/*.contact-info*/
+
+main ul li p {
+  /*display: block;*/
+  /*list-style: none;*/
+  padding: 5px 5px 5px 0;
+  /*line-height: 22px;*/
+}
+
+main ul li a {
+  font-family: 'Catamaran';
+  font-size: 20px;
+
+}
+
+
+.contact-list {
+  word-break: break-word;
+  /*float: right;*/
+}
+
+.contact-list h3 {
+  /*font-family: Arial;*/
+  font-size: 28px;
+  font-weight: 400;
+  color: #111;
+  padding-bottom: 15px;
+}
+
+.my-photo {
+  /*width: 50%;*/
+  /*width: 250px;*/
+  margin: 0 auto 20px;
+  float: left;
+}
+
+
+.icons-contacts {
+  margin: 80px auto 50px;
+  padding: 20px 20px 20px 0;
+  line-height: 10px;
+  text-align: left;
+
+}
+
+.icons-contacts img {
+    padding: 5px;
+    border-radius: 5px;
+    /*background-color: lightblue;*/
+    width:  20px;
+    height: 20px;
+}
+
+
+
+  /* footer */
+
+
+
+/* tablet */
+@media only screen and (min-width: 760px) {
+  /* prevent github from coming up */
+  .icons-contacts {
+    margin-top: 140px;
+  }
+
+  /* set my name to the middle */
+  .contact-list {
+    margin: 70px 0px 0 55%;
+    padding-left: 80px;
+  }
+
+}
+
+/* very small phones */
+@media only screen and (max-width: 400px) {
+  .nv-page-title h2 {
+    padding-top: 10px;
+  }
+
+  /* move my name below the photo */
+  .contact-list {
+    margin-top: 280px;
+    padding-top: 10px;
+  }
+
+  /* make the gap smaller */
+  .icons-contacts {
+    margin: auto;
+  }
+
+  .my-photo {
+    margin-bottom: 0px;
+  }
+
+  /* resize img */
+  .my-photo img {
+    width: 300px;
+    height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .contact-list {
+    padding-left: 0;
+  }
+
+  /* increase the fontsizes */
+  .contact-list h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  main ul li {
+    font-size: 20px;
+  }
+
+  main ul li a {
+    font-size: 24px;
+  }
+
+  .contact-list-mobile {
+    display: block;
+  }
+
+}

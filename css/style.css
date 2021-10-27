@@ -1,0 +1,509 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* */
+/* MY CODE */
+/* */
+
+
+* {
+  /* remove underlinks from the entire document */
+  text-decoration: none;
+}
+
+body {
+  /*background-color: #f3f3f3;*/
+  -webkit-font-smoothing: antialiased;
+  font-family: Bitter, sans-serif;
+}
+
+
+
+/* Header */
+
+header .header-brand {
+  /*font-family: 'Catamaran';*/
+  /*font-family: Arial;*/
+
+  font-size: 24px;
+  font-weight: bold;
+  /* not complete dark */
+  color: #111;
+  text-transform: uppercase;
+  /* in cases of links it is easier to style them later if they're blocks */
+  display: block;
+  /* center the block */
+  margin: 20px 20px 20px;
+  /* centre also the text */
+  text-align: left;
+  /* get space above and below, nothing on sides*/
+  padding: 5px 0;
+  /* add an underline */
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* style nav */
+header nav ul {
+  /* add this to be able to centre it */
+  display: block;
+  /* centre */
+  margin: 0 10px 0 10px;
+  /* centre within itself -- important */
+  width: fit-content;
+}
+
+header nav ul li {
+  /* make it in line */
+  display: inline-block;
+  /* we need it because otherwise there will be a small gap between the links */
+  float: left;
+  list-style: none;
+  /* add spacing around */
+  padding: 10px 16px;
+
+}
+
+header nav ul li a {
+  /*font-family: 'Catamaran';*/
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+/* if the link is clicked, make it special -- TODO, need to change the class in the html if it is clicked */
+header nav ul li a.active-trail {
+    color: #085D6F;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+/* main */
+
+main {
+  /* to have a space between the header and this box */
+  font-family: 'Catamaran', serif;
+  padding: 80px 20px 0 20px;
+  margin: 0 auto 50px;
+}
+
+
+main ul {
+/*  need to figure out width since it will change */
+/*  width: fit-content;*/
+/*  float: right;*/
+  /*padding-left: 20px;*/
+
+}
+
+main ul li {
+  display: block;
+  list-style: none;
+  padding: 5px 5px 5px 0;
+  line-height: 22px;
+}
+
+main ul li p {
+  /*display: block;*/
+  /*list-style: none;*/
+  padding: 5px 5px 5px 0;
+  /*line-height: 22px;*/
+
+}
+
+
+/* style the links the same way */
+main a {
+  /*font-family: 'Catamaran';*/
+  /*font-size: 20px;*/
+  /* do not use completely black -- hurts eyes, unless you have a very specific reason */
+  color: #5a5656; /* #111; */
+  /*line-height: 40px;*/
+  /* make the links underlined with this colour */
+  text-decoration: underline;
+  text-decoration-color: #405c33;
+}
+
+main ul li a {
+  /*font-family: 'Catamaran';*/
+  /*font-size: 20px;*/
+  color: #5a5656; /* #111; */
+  /*line-height: 40px;*/
+  /* make the links underlined with this colour */
+  text-decoration: underline;
+  text-decoration-color: #405c33;
+}
+
+
+/* unvisited link */
+/*main ul li a:link {*/
+/*  !* this somehow does not work for all *!*/
+/*  color: #5a5656;*/
+/*}*/
+
+/*/* visited link */*/
+/*main ul li a:visited {*/
+/*  color: green;*/
+/*}*/
+
+/* mouse over link */
+main a:hover {
+  color: #1e84f2;
+}
+
+/* mouse over link */
+main ul li a:hover {
+  color: #1e84f2;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+main article h3 {
+  font-family: 'Bitter', serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #111;
+  margin-top: 10px;
+  padding-top: 20px;
+  /*text-transform: uppercase;*/
+  padding-bottom: 5px;
+  /*border-bottom: 1px solid #f0f0f0;*/
+  margin-bottom: 10px;
+}
+
+main p {
+  padding: 5px 0;
+}
+
+
+
+/* Contact title and title - for headings */
+.contact-title {
+  /*font-family: Arial;*/
+  font-size: 40px;
+  font-weight: 600;
+  color: #111;
+  padding-bottom: 5px;
+}
+
+.nv-page-title {
+  margin-top: 30px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+
+
+/* center the blockquote in the page */
+.blockquote-wrapper {
+   padding: 0 20px;
+}
+
+/* Blockquote main style */
+.blockquote {
+    position: relative;
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-family: 'Cinzel', serif;*/
+    /*font-family: 'Bitter', serif;*/
+    /* default? for Chrome */
+    font-family: Times-Roman, serif;
+    font-weight: 400;
+    color: ##111;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    margin: 20px auto 60px;
+    align-self: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+/* Blockquote header */
+.blockquote h2 {
+    position: relative;
+    color: #111;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    border-bottom: none;
+}
+
+/* Blockquote right double quotes */
+.blockquote:after {
+    position: absolute;
+    content: "”";
+    color: rgba(17, 17, 17, 1);
+    font-size: 8rem;
+    line-height: 0;
+    bottom: -40px;
+    right: 30px;
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+    /*font-family: 'Cinzel', serif;*/
+    /*font-family: 'Bitter', serif;*/
+    position: relative;
+    color: #292a2b;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+}
+
+
+
+
+
+  /* footer */
+
+footer {
+  width: calc(100% - 20px);
+  height: 40px;
+  position: fixed;
+  /* put it on the bottom */
+  bottom: 0;
+  padding: 0px 10px;
+  margin-top: 20px; /* calc(100% - 250px) */
+  background-color: #111;
+  color: white;
+  /* when we have a box with things which float left and right it doesn't know what to do with it*/
+/*   therefore we need to add the overflow which will magically fix it, todo */
+  overflow: hidden;
+  /* to be sure that it's over everything */
+  z-index: 2;
+}
+
+
+
+footer .footer-findme {
+    font-family: Arial;
+    position: absolute;
+    margin: auto 10px 0px;
+    text-align: center;
+    /* centre the label */
+    line-height: 40px;
+    float: left;
+  }
+
+/* style the icons */
+ul.social-media-list {
+    list-style-type: none;
+    margin: 5px 40px;
+    padding: 0;
+    font-size: 0px; /* eliminate space between li */
+    float: right;
+}
+
+
+ul.social-media-list img {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightblue;
+    width: 16px;
+    height: 16px;
+}
+
+ul.social-media-list li {
+  display: inline-block;
+  margin: 2px;
+}
+
+
+ul.social-media-list img:hover {
+    background-color: #63D1F4;
+}
+
+
+
+/* tablet */
+@media only screen and (min-width: 760px) {
+  /* increase the header size */
+  /*.blockquote h2 {*/
+  /*  font-size: 40px;*/
+  /*  padding: 30px 0;*/
+  /* }*/
+
+  /*.blockquote h4 {*/
+  /*  font-size: 1.4rem;*/
+  /*}*/
+
+  /* change also the wrapper */
+  .wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  main {
+    box-shadow: 1px 1px 50px #b8b8b8;
+  }
+
+}
+
+/* very small phones */
+@media only screen and (max-width: 400px) {
+
+  main {
+    margin-top: 40px;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  /*have a nice frame */
+  .wrapper {
+    /* make sure that it is the same width everywhere */
+    width: 1000px!important;
+    margin: 0 auto;
+  }
+
+  main {
+    margin: 100px auto 50px;
+    padding: 10px 20px 0 20px;
+  }
+
+    /* but not in the main text */
+  main .blockquote-wrapper {
+    /* change the width to fit the box */
+    width: 100%;
+    margin: 40px 0 80px;
+    padding: 0;
+  }
+
+  main .blockquote {
+    padding: 20px 0;
+    max-width: none;
+  }
+
+  /* remove the styling from main h2 */
+  main .blockquote h2 {
+    border-bottom: none;
+  }
+
+  main .blockquote:after {
+    bottom: -40px;
+  }
+
+
+  footer .footer-findme {
+    float: none;
+    margin: auto 30px auto 25%;
+  }
+
+  ul.social-media-list {
+    float: none;
+    margin-left: 45%;
+}
+
+
+}

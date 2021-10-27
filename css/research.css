@@ -1,0 +1,94 @@
+/* */
+/* MY CODE */
+/* */
+
+
+/* Header */
+
+
+
+/* main */
+p {
+  padding: 10px 0px;
+  font-size: 18px;
+}
+
+
+h3 {
+  color: #111;
+  line-height: 40px;
+}
+
+.img-info {
+  width: 100%;
+}
+
+.img-info p {
+  padding: 0px 30px 20px; /* 20 px from bottom */
+  font-size: 16px;
+  color: #111;
+  line-height: 24px;
+
+}
+
+.video-recoverin {
+  width: 100%;
+}
+
+.video-recoverin iframe {
+  /* centre it */
+  margin: 10px calc( (100% - 560px)/2);
+  /*width: 100%;*/
+}
+
+
+  /* footer */
+
+
+
+
+/* tablet */
+@media only screen and (min-width: 760px) {
+  main .blockquote {
+    max-width: none;
+    margin: 20px auto 60px;
+
+  }
+
+}
+
+/* very small phones */
+@media only screen and (max-width: 400px) {
+
+  .video-recoverin iframe {
+    width: 96%;
+    height: auto;
+  /* centre it */
+    margin: 10px 2%;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  /* but not in the main text */
+  main .blockquote-wrapper {
+    /* change the width to fit the box */
+    width: 100%;
+    margin: 40px 0 80px;
+    padding: 0;
+  }
+
+  main .blockquote {
+    padding: 20px 0;
+  }
+
+  /* remove the styling from main h2 */
+  main .blockquote h2 {
+    border-bottom: none;
+  }
+
+
+
+
+}

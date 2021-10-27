@@ -1,0 +1,378 @@
+/* */
+/* MY CODE */
+/* */
+
+/* Header */
+
+
+/* hide this fancy thing for phones -- todo make it the rolout */
+section.second-header {
+  display: none;
+}
+
+/* main list */
+
+h2 {
+    font-size: 20px;
+    padding-top: 50px;
+    /* to accomodate the second header */
+    margin-top: -20px;
+}
+
+    /* the actual list */
+
+/* the same for the actual items*/
+ul.universities-list {
+    list-style-type: none;
+}
+
+ul.universities-list img {
+    padding: 0;
+    border-radius: 5px;
+    /*background-color: lightblue;*/
+    width: 150px;
+    /*max-width: 300px;*/
+    max-height: 150px;
+    /*height: 50px;*/
+}
+
+ul.universities-list li {
+  margin: 2px;
+  padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.universities-list img:hover {
+    background-color: #63D1F4;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* make space between the pics and labels */
+div.universities-list{
+  /*padding-left: 15%;*/
+  margin-left: 5%;
+  /*if I want to centre them*/
+  width: 100%;
+  /*align-items: stretch;*/
+  text-align: left;
+}
+
+/* make the labels of the images/organisations centred, interesting also without*/
+li.universities-list {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    /*text-align: center;*/
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+
+/* main */
+
+
+main ul li {
+  padding: 5px;
+}
+
+main ul li p {
+  font-family: 'Catamaran', serif;
+  font-size: 18px;
+  padding: 5px;
+}
+
+main h2 {
+  font-family: 'Bitter', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  /*text-transform: uppercase;*/
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+main h3 {
+  font-family: 'Bitter', serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #111;
+  margin-top: 10px;
+  padding-top: 20px;
+  /*text-transform: uppercase;*/
+  padding-bottom: 5px;
+}
+
+/* Make a special list for participating in EUDC */
+.universities-list ul.debate-list {
+  line-height: 10px;
+  padding-left: 20px;
+}
+
+.universities-list ul.debate-list li {
+  /* the display makes it back to visible */
+  /* https://stackoverflow.com/questions/9636132/list-style-css-override-back-to-default */
+  display: list-item;
+  list-style: square;
+  padding: 0px 5px;
+  border-bottom: none;
+}
+
+
+/*.universities-list ul.debate-list li img {*/
+/*    padding: 5px;*/
+/*    border-radius: 5px;*/
+/*    background-color: lightblue;*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*}*/
+
+/*.flags {*/
+/*  !*width: calc(620px + 40px);*!*/
+/*  !*min-width: 310px;*!*/
+/*  text-align: center;*/
+/*}*/
+
+/*.flags img {*/
+/*    padding: 5px;*/
+/*    border-radius: 20px!important;*/
+/*    background-color: #EEE;*/
+/*    height: 22px;*/
+/*    width: 30px!important;*/
+/*}*/
+
+/*.flags2 {*/
+/*    padding: 5px;*/
+/*    border-radius: 20px!important;*/
+/*    background-color: #EEE;*/
+/*    height: 22px;*/
+/*    width: 30px!important;*/
+/*}*/
+
+
+
+/* remove the spaces between list items */
+.flags-li {
+  padding: 0 10px!important;
+}
+
+.flags3 img {
+    border-radius: 20px!important;
+    background-color: #EEE;
+    height: 22px;
+    /*width: 30px!important;*/
+}
+
+.flags3 img:hover {
+  /* turn off the link */
+  background-color: #EEE!important;
+  /*background-color: transparent!important;*/
+}
+
+
+
+
+/* footer */
+
+
+
+/* tablet */
+@media only screen and (min-width: 760px) {
+  /* change also the wrapper */
+  .wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  main {
+    box-shadow: 1px 1px 50px #b8b8b8;
+  }
+
+
+  main ul li p {
+    font-size: 18px;
+  }
+
+  main h2 {
+    font-size: 30px;
+  }
+
+  main h3 {
+    font-size: 26px;
+  }
+
+}
+
+/* very small phones */
+@media only screen and (max-width: 400px) {
+  h2 {
+    margin-top: 10px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+  /*have a nice frame */
+
+  main {
+    margin-top: 0px;
+  }
+
+
+  h2 {
+    /*fix wider top bar covering headings */
+    padding-top: 100px;
+  }
+
+    /* if the link is clicked, make it special -- TODO, need to change the class in the html if it is clicked */
+  header nav ul li a.active-trail {
+      color: #085D6F;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+
+
+  /* second header -- opens only for PC */
+  section.second-header {
+    display: block;
+    /*position: fixed;*/
+    /*top: 110px;*/
+    margin-top: 10px;
+  }
+
+  /* make it stuck to the top */
+  div.sticky {
+    position: -webkit-sticky;
+    /* need to be together */
+    position: sticky;
+    top: 0;
+    /*padding: 50px;*/
+    font-size: 20px;
+    margin-top: 80px;
+  }
+
+
+
+  header.second-header {
+      /*background-color: white;*/
+      background-color: #63D1F4;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 80px; /* for two lines */
+      display: flex;
+      align-items: center;
+    /*  make blur */
+      box-shadow: 0 5px 20px -5px black;
+  }
+
+  /* all elements of the block will be horizontal*/
+  header.second-header * {
+      /*display: inline;*/
+  }
+
+  /* make space between them */
+  header.second-header nav ul li {
+      margin: auto 1rem;
+      padding: 0.5rem 1rem;
+      float: none;
+  }
+
+      /*make links nicer */
+  header.second-header nav ul li a {
+      color: black;
+      text-decoration: none;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  header.second-header nav ul li a:hover {
+      background-color: silver;
+      /*background-color: #63D1F4;*/
+      /* popping up */
+      padding: 10px;
+      box-shadow: 0 0 20px 0 black;
+  }
+
+
+  /* main */
+
+  main ul li p {
+    font-size: 20px;
+  }
+
+  main h2 {
+    font-size: 32px;
+  }
+
+  main h3 {
+    font-size: 28px;
+  }
+
+
+  ul.universities-list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+  }
+
+
+  ul.universities-list img {
+      padding: 5px;
+      border-radius: 5px;
+      /*background-color: lightblue;*/
+      width: 300px;
+      /*max-width: 300px;*/
+      max-height: 150px;
+      /*height: 50px;*/
+  }
+      ul.universities-list {
+      list-style-type: none;
+      margin: 10px;
+      padding: 10px;
+  }
+
+  ul.universities-list li {
+    padding: 10px;
+    border-bottom: none;
+  }
+
+  /* make space between the pics and labels */
+  div.universities-list{
+    margin-left: 10%;
+  }
+
+  /* style prase */
+  .universities-list .prase-img {
+  width: 150px;
+  padding-left: 80px;
+  padding-right: 80px;
+  }
+
+  /* make bugger gap for EUDC */
+  .universities-list ul.debate-list {
+  padding-left: 40px;
+}
+
+
+  /* footer */
+
+
+}
+

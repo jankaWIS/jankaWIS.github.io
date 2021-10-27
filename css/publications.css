@@ -1,0 +1,139 @@
+/* */
+/* MY CODE */
+/* */
+
+
+
+/* Header */
+
+
+
+/* main */
+
+
+
+main {
+  font-size: 18px;
+}
+
+
+main a {
+  font-size: 18px;
+}
+
+
+
+main p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+div {
+    display: block;
+}
+
+
+
+
+/* have abstracts hidden */
+.hidden {
+  display: none;
+}
+
+  /*  LIST */
+
+/* make me bold */
+.pub-authors .highlighted {
+    font-weight: bold;
+}
+
+.pub-wrapper {
+    margin-right: 30px;
+}
+
+.pub-journal {
+  font-style: italic;
+}
+
+.view-publications .pub-title {
+    margin-bottom: .3em;
+}
+
+
+.view-content {
+  padding-left: 20px;
+}
+
+.view-content h3 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+/* make splits */
+.extra_link {
+  /* make separation */
+  border-bottom: 1px dashed #777;
+  margin-bottom: 25px;
+}
+
+/* */
+/* Style abstract */
+/* */
+.abstract-wrapper {
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.abstract-toggle {
+  margin-bottom: 10px;
+}
+
+/* style the button to look like a link todo */
+/* http://jsfiddle.net/zYCN9/1/, https://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link?rq=1 */
+/* class action -- https://stackoverflow.com/questions/5512055/apply-css-to-button-element-with-certain-class*/
+button.abstract-toggle {
+    background:none!important;
+     border:none;
+     padding:0!important;
+
+    /*optional*/
+    /*font-family:arial,sans-serif; !*input has OS specific font-family*!*/
+    font-size: 20px;
+     color:#069;
+     cursor:pointer;
+}
+button:hover.abstract-toggle{
+         text-decoration:underline;
+}
+
+
+
+
+
+  /* footer */
+
+
+
+
+/* tablet */
+@media only screen and (min-width: 760px) {
+
+
+}
+
+/* very small phones */
+@media only screen and (max-width: 400px) {
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+
+
+}

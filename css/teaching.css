@@ -1,0 +1,148 @@
+/* */
+/* MY CODE */
+/* */
+
+
+/* Header */
+
+
+
+/* main */
+
+
+
+main {
+  font-size: 18px;
+}
+
+main ul {
+  padding-bottom: 30px;
+}
+
+main ul li {
+  display: list-item;
+  margin-left: 30px;
+  list-style: circle;
+  padding: 5px;
+  line-height: 22px;
+
+}
+
+main a {
+  /*font-family: 'Catamaran';*/
+  font-size: 18px;
+}
+
+
+main p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+div {
+    display: block;
+}
+
+main article h3 {
+  /* todo, decide */
+  /*font-family: 'Bitter', serif;*/
+  font-family: 'Catamaran', serif;
+  /*font-family: Arial, serif;*/
+
+}
+
+/* have abstracts hidden */
+.hidden {
+  display: none;
+}
+
+
+/* have some space above the quote on phones */
+.blockquote {
+  margin-top: 50px;
+}
+
+
+/* */
+/* Style abstract */
+/* */
+.abstract-wrapper {
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.abstract-toggle {
+  margin-bottom: 10px;
+}
+
+/* style the button to look like a link */
+/* http://jsfiddle.net/zYCN9/1/, https://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link?rq=1 */
+/* class action -- https://stackoverflow.com/questions/5512055/apply-css-to-button-element-with-certain-class*/
+button.abstract-toggle {
+    background:none!important;
+     border:none;
+     padding:0!important;
+
+    /*optional*/
+    /*font-family:arial,sans-serif; !*input has OS specific font-family*!*/
+    font-size: 20px;
+     color:#069;
+     cursor:pointer;
+}
+button:hover.abstract-toggle{
+         text-decoration:underline;
+}
+
+
+
+
+
+  /* footer */
+
+
+
+
+/* tablet */
+@media only screen and (min-width: 760px) {
+  main .blockquote {
+    max-width: none;
+    margin: 20px auto 60px;
+
+  }
+
+}
+
+/* very small phones */
+@media only screen and (max-width: 400px) {
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+  /* but not in the main text */
+  main .blockquote-wrapper {
+    /* change the width to fit the box */
+    width: 100%;
+    margin: 40px 0 80px;
+    padding: 0;
+  }
+
+  main .blockquote {
+    padding: 20px 0;
+  }
+
+  /* remove the styling from main h2 */
+  main .blockquote h2 {
+    border-bottom: none;
+  }
+
+
+
+
+}
