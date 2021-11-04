@@ -243,7 +243,7 @@ main ul li a {
 /*  color: #5a5656;*/
 /*}*/
 
-/*/* visited link */*/
+ /*visited link */
 /*main ul li a:visited {*/
 /*  color: green;*/
 /*}*/
@@ -314,7 +314,7 @@ main p {
     /* default? for Chrome */
     font-family: Times-Roman, serif;
     font-weight: 400;
-    color: ##111;
+    color: #111;
     padding: 20px 0;
     width: 100%;
     max-width: 500px;
