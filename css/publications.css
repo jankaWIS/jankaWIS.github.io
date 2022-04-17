@@ -111,7 +111,12 @@ button:hover.abstract-toggle{
 }
 
 
-
+.circle-list ul li {
+    display: list-item;
+    margin-left: 30px;
+    list-style: circle;
+    padding: 5px;
+}
 
 
   /* footer */
