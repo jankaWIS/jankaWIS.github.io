@@ -133,6 +133,16 @@ main h3 {
   border-bottom: none;
 }
 
+ul.conference-list li {
+  /* the display makes it back to visible */
+  /* https://stackoverflow.com/questions/9636132/list-style-css-override-back-to-default */
+  display: list-item;
+  list-style: square;
+  margin-left: 10px;
+  /* to bring the bullets closer to the text */
+  padding-left: 0!important;
+}
+
 
 /*.universities-list ul.debate-list li img {*/
 /*    padding: 5px;*/
