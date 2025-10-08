@@ -1,4 +1,4 @@
-// Citation functionality
+// citation functionality - to allow copying bibtex format of articles
 document.addEventListener('DOMContentLoaded', () => {
     function generateBibTeX(publication) {
         // Extract year using regex and get the first match
@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clean up the values
         const cleanTitle = title.trim();
         const cleanAuthors = authors.trim();
-        const cleanJournal = journal.trim().replace(/,$/, ''); // Remove trailing comma
-        const cleanVolume = volume.trim().replace(/\.$/, ''); // Remove trailing period
+        const cleanJournal = journal.trim().replace(/,$/, ''); // remove trailing comma
+        const cleanVolume = volume.trim().replace(/\.$/, ''); // remove trailing period
         const cleanYear = year; // year is already clean from regex
         const cleanDoi = doi.trim();
 
-        // Format BibTeX entry with consistent spacing
+        // Format BibTeX entry with consistent spacing, remove the space and newline in the cicationKey
         return `@article{${citationKey.trim()},
     title = {${cleanTitle}},
     author = {${cleanAuthors}},
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }`;
     }
 
-    // Add citation buttons to each publication
+    // add citation buttons to each publication
     document.querySelectorAll('.views-row').forEach(pub => {
         const citeBtn = document.createElement('button');
         citeBtn.textContent = 'Cite';
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         citeBtn.addEventListener('click', () => {
             const bibtex = generateBibTeX(pub);
             
-            // Create modal with citation
+            // create modal with citation using a template
             const modal = document.createElement('div');
             modal.className = 'citation-modal';
             modal.innerHTML = `
